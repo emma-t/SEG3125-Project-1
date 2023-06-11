@@ -2,7 +2,10 @@
 <html lang="en">
     <head>
         <style>
-            h2 {
+            h1 {
+                text-align: center;
+            }
+            h3 {
                 text-align: center;
             }
 
@@ -15,12 +18,16 @@
 
             .row {
                 display: flex;
-                width: 90%;
+                padding: 2%;
+            }
+            
+            .column {
+                flex: 33.33%;
+                padding: 2%;
             }
 
-            .column {
-                flex: 10%;
-                padding: 5px;
+            .text {
+                font-size: 140%;
             }
         </style>
 
@@ -59,71 +66,112 @@
             </div>
         </nav>
 
-        <card>
-            <div class="row">
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
-                        alt="books new" style="width:100%">
-                </div><div class="column">
-                    <img src="https://images.unsplash.com/photo-1534580235139-e2ef095e1972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                        alt="books old" style="width:100%">
-                </div>
+        <div class="row">
+            <div class="column">
+                <card>
+                    <h1>
+                        Restore
+                    </h1>
+                    <div class="row">
+                        <div class="column">
+                            <img src=".\images\old-book.png"
+                            class="img-thumbnail" alt="books new" style="width:100%">
+                            <h3>
+                                Before
+                            </h3>
+                        </div><div class="column">
+                            <img src=".\images\new-book.png"
+                            class="img-thumbnail" alt="books old" style="width:100%">
+                            <h3>
+                                After
+                            </h3>
+                        </div>
+                    </div>
+                        <p class="text center">
+                            At our book restoration website, we specialize in restoring old books to their former glory. We understand the
+                            sentimental and historical value that these books hold, and our skilled craftsmen work diligently to revive their
+                            beauty and preserve their integrity. During restoration, we
+                        </p>
+                        <ul class="text center">
+                            <li>physically and chemically stabilize damage and halt deterioration</li>
+                            <li>take comprehensive approach to revive the book to its original condition</li>
+                        </ul>
+                        <p class="text center">
+                            We employ meticulous techniques to ensure that your cherished books can be enjoyed for generations to come.
+                        </p>
+                </card>
             </div>
-                <p class="center">
-                    At our book restoration website, we specialize in restoring old books to their former glory. We understand the
-                    sentimental and historical value that these books hold, and our skilled craftsmen work diligently to revive their
-                    beauty and preserve their integrity. During restoration, we
-                
-                    - physically and chemically stabilize damage and halt deterioration
-                    - take comprehensive approach to revive the book to its original condition
-                
-                    We employ meticulous techniques to ensure that your cherished books can be enjoyed for generations to come.
-                </p>
-        </card>
-                
-        <card>
-            <div class="row">
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
-                        alt="books new" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1534580235139-e2ef095e1972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                        alt="books old" style="width:100%">
-                </div>
+        
+            <div class="column">        
+                <card>
+                    <h1>
+                        Repair
+                    </h1>
+                    <div class="row">
+                        <div class="column">
+                            <img src=".\images\torn-book.png"
+                            class="img-thumbnail" alt="books new" style="width:100%">
+                            <h3>
+                                Before
+                            </h3>
+                        </div>
+                        <div class="column">
+                            <img src=".\images\repaired-book.png"
+                            class="img-thumbnail" alt="books old" style="width:100%">
+                            <h3>
+                                After
+                            </h3>
+                        </div>
+                    </div>
+                    <p class="text center">
+                        Our book repair service covers all types of books, from hardcovers to paperbacks. We carefully assess each book's condition and employ appropriate techniques to repair its functionality and appearance. During repairs, we
+                    </p>
+                    <ul class="text center">
+                        <li>reinforce damaged spines</li>
+                        <li>mend torn pages</li>
+                        <li>replace damaged covers</li>
+                        <li>focus on fixing specific issues or damages in a book</li>
+                    </ul>
+                    <p class="text center">
+                        With our book repair service, you can breathe new life into your favourite books, making them readable and enjoyable once again.
+                    </p>
+                </card>
             </div>
-            <p class="center">
-                Our book repair service covers all types of books, from hardcovers to paperbacks. We carefully assess each book's condition and employ appropriate techniques to repair its functionality and appearance. During repairs, we
 
-                - reinforce damaged spines
-                - mend torn pages
-                - replace damaged covers
-                - focus on fixing specific issues or damages in a book
-              
-              With our book repair service, you can breathe new life into your favourite books, making them readable and enjoyable once again.
-            </p>
-        </card>
-
-        <card>
-            <div class="row">
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
-                        alt="books new" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1534580235139-e2ef095e1972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                        alt="books old" style="width:100%">
-                </div>
+            <div class="column">
+                <card>
+                    <h1>
+                        Digitize
+                    </h1>
+                    <div class="row">
+                        <div class="column">
+                            <img src=".\images\open-book.png"
+                            class="img-thumbnail" alt="books new" style="width:100%">
+                            <h3>
+                                Before
+                            </h3>
+                        </div>
+                        <div class="column">
+                            <img src=".\images\digital-book.png"
+                            class="img-thumbnail" alt="books old" style="width:100%">
+                            <h3>
+                                After
+                            </h3>
+                        </div>
+                    </div>
+                    <p class="text center">
+                        Our digitization service preserves and provides easy access to books in a digital format. This enhances searchability, allows for convenient sharing, and ensures the preservation of valuable literary works. During digitization, we
+                    </p>
+                    <ul class="text center">
+                        <li>scan each page and remove any flaws</li>
+                        <li>create high-quality digital copies that retain the original look and feel of the book</li>
+                    </ul>
+                    <p class="text center">
+                        Whether you have rare manuscripts or out-of-print books, our digitization service helps create a digital library for future generations to enjoy.
+                    </p>
+                </card>
             </div>
-            <p class="center">
-                Our digitization service preserves and provides easy access to books in a digital format. This enhances searchability, allows for convenient sharing, and ensures the preservation of valuable literary works. During digitization, we
-
-                - scan each page and remove any flaws
-                - create high-quality digital copies that retain the original look and feel of the book
-
-                Whether you have rare manuscripts or out-of-print books, our digitization service helps create a digital library for future generations to enjoy.
-            </p>
-        </card>
+        </div>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

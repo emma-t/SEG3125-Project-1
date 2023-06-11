@@ -3,6 +3,10 @@
 <html lang="en">
     <head>
         <style>
+            .image {
+                padding: 2%;
+            }
+
             h2 {
                 text-align: center;
             }
@@ -16,13 +20,14 @@
 
             .row {
                 display: flex;
-                width: 90%;
+                width: 100%;
             }
 
             .column {
                 flex: 33.33%;
-                padding: 5px;
+                padding: 10px;
             }
+
         </style>
 
         <!-- Required meta tags -->
@@ -60,29 +65,34 @@
             </div>
         </nav>
 
-        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-            alt="books" class="center">
-
+        <div class="image">
+            <img src=".\images\books.jpg"
+            alt="books" class="center" style="width:90%">
+        </div>
+        
         <h2 class="center">Perserving the past, one book at a time</h2>
         <p class="center">We specialize in breathing new life into your cherished books. Whether you have a beloved family
             heirloom or a treasured collection, our expert team is here to restore and revive their beauty. With meticulous
             care and attention to detail, we repair torn pages, reinforce delicate spines, and mend worn-out covers. Our
             passion for books and commitment to quality craftsmanship ensure that your books will be preserved for
             generations to come. Trust us to give your books the care they deserve and bring their stories back to life.
-            Explore our services and entrust us with your literary treasures.</p>
+            Explore our services and entrust us with your literary treasures.
+        </p>
 
-        <div class="row">
-            <div class="column">
-                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
-                    alt="books new" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="https://images.unsplash.com/photo-1534580235139-e2ef095e1972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                    alt="books old" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="https://images.unsplash.com/photo-1592685855723-11ec58598a6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                    alt="book kindle" style="width:100%">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1537495329792-41ae41ad3bf0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    class="rounded-circle" alt="books new" style="width:80%">
+                </div>
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1534580235139-e2ef095e1972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    class="rounded-circle"alt="books old" style="width:80%">
+                </div>
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1592685855723-11ec58598a6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    class="rounded-circle"alt="book kindle" style="width:80%">
+                </div>
             </div>
         </div>
 

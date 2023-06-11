@@ -1,10 +1,15 @@
 <!doctype html>
 <!-- http://127.0.0.1:5500/index.html -->
 <html lang="en">
+
     <head>
         <style>
-            h2 {
+            h1 {
                 text-align: center;
+            }
+
+            p {
+                font-size: 120%;
             }
 
             .center {
@@ -20,15 +25,47 @@
                 margin-right: auto;
                 padding: 1%;
                 /* width: 90%; */
+                text-align: center;
             }
+
             .card {
                 display: flex;
                 margin-left: auto;
                 margin-right: auto;
                 padding: 1%;
+                color: #000000;
+                text-decoration: none;
                 /* width: 90%; */
             }
 
+            .card .book {
+                position: relative;
+                bottom: 30px;
+                left: 0px;
+                visibility: hidden;
+                margin-top: -400px;
+            }
+
+            .card:hover {
+                transform: translateY(-5px) scale(1.005) translateZ(0);
+                box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+                    0 24px 46px var(--box-shadow-color);
+                color: #000000;
+                text-decoration: none;
+                background-color: #000;
+                color: #fff;
+                opacity: .9;
+            }
+
+            .card:hover .book {
+                text-align: center;
+                visibility: visible;
+                margin-top: -400px;
+            }
+
+            .text {
+                font-size: 140%;
+            }
         </style>
 
         <!-- Required meta tags -->
@@ -67,42 +104,61 @@
         </nav>
 
         <div class="card-group">
-            <div class="card">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1623184663110-89ba5b565eb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=812&q=80" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=461&q=80" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card-group">
-            <div class="card">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1623184663110-89ba5b565eb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=812&q=80" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=461&q=80" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
+            <a href="book.html" class="card">
+                <h1 class="card-text">
+                    John Smith
+                </h1>
+                <img class="card-img-top" src=".\images\person1.png" alt="Card image cap">
+
+                <div class="hover">
+                    <h2 class="book">BOOK NOW</h2>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text">Experience: 5 years at the Heritage Bindery & Restoration Institute</h5>
+                    <p class="card-text">
+                        Introducing John Smith, our skilled book repair specialist. With expertise, meticulous
+                        craftsmanship, and a passion for preserving literary treasures, he revives cherished volumes with
+                        care and authenticity.</p>
+                </div>
+            </a>
+            <a href="book.html" class="card">
+                <h1 class="card-text">
+                    Jane Doe
+                </h1>
+                <img class="card-img-top" src=".\images\person4.png" alt="Card image cap">
+
+                <div class="hover">
+                    <h2 class="book">BOOK NOW</h2>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text">Experience: 3 years at the Ontario Archives Book Conservation Lab</h5>
+                    <p class="card-text">Known for her exceptional craftsmanship, Jane Doe's dedication to preserving the
+                        integrity of each book is unparalleled. Whether it's a well-worn classic, a cherished family
+                        heirloom, or a valuable collectible, Jane's expertise ensures that every book receives the utmost
+                        care and attention.</p>
+                </div>
+            </a>
+            <a href="book.html" class="card">
+                <h1 class="card-text">
+                    Emma Rey
+                </h1>
+                <img class="card-img-top" src=".\images\person3.png" alt="Card image cap">
+
+                <div class="hover">
+                    <h2 class="book">BOOK NOW</h2>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text">Experience: 2 years at the Royal Book Restoration Atelier</h5>
+                    <p class="card-text">With meticulous attention to detail and a deep reverence for the written word, Emma
+                        expertly restores books, preserving their stories for future generations. Her passion for the craft
+                        and dedication to quality craftsmanship make Emma the perfect choice to entrust your cherished
+                        volumes to.</p>
+                </div>
+            </a>
+        </div>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

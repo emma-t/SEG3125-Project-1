@@ -1,136 +1,164 @@
 <!doctype html>
 <!-- http://127.0.0.1:5500/index.html -->
 <html lang="en">
-    <head>
-        <style>
-            h2 {
-                text-align: center;
-            }
 
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 90%;
-            }
+<head>
+    <style>
+        h2 {
+            text-align: center;
+        }
 
-            .row {
-                display: flex;
-                width: 90%;
-            }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+        }
 
-            .column {
-                flex: 33.33%;
-                padding: 5px;
-            }
-        </style>
+        .row {
+            display: flex;
+        }
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        .column {
+            flex: 50%;
+            padding: 5px;
+        }
+    </style>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>BiblioTech Restore</title>
-    </head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <body>
-        <nav>
-            <div class="nav nav-tabs nav justify-content-end" id="nav-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="specialists.html">Specialists</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="faq-review.html">FAQ & Review</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <button class="nav-item">
-                    <a class="nav-link" href="book.html">Book Now</a>
-                </button>
+    <title>BiblioTech Restore</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav nav-tabs nav justify-content-end" id="nav-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="specialists.html">Specialists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="faq-review.html">FAQ & Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <button class="nav-item">
+                <a class="nav-link" href="book.html">Book Now</a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="column">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Q: What types of books do you restore, repair, and digitize?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A: We handle a wide range of books, including hardcovers,
+                            paperbacks, leather-bound, and antique books.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Q: Can you repair books with torn pages or loose bindings?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A: Absolutely! We specialize in repairing torn pages, loose
+                            bindings, and other book damage.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Q: Do you offer restoration services for rare and valuable books?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A: Yes, we have extensive experience in handling and restoring rare
+                            and valuable books with utmost care and precision.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Q: How long does the restoration or repair process take?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A: The timeline depends on the condition of the book and the extent
+                            of the restoration or repair required. We can provide an estimate after evaluating your
+                            book.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Q: Do you offer digitization services for entire book collections?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A: Yes, we provide digitization services to create high-quality
+                            digital copies of entire book collections.</div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOneReview">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneReview" aria-expanded="false" aria-controls="flush-collapseOneReview">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="flush-collapseOneReview" class="accordion-collapse collapse" aria-labelledby="flush-headingOneReview" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwoReview">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoReview" aria-expanded="false" aria-controls="flush-collapseTwoReview">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="flush-collapseTwoReview" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoReview" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThreeReview">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeReview" aria-expanded="false" aria-controls="flush-collapseThreeReview">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="flush-collapseThreeReview" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeReview" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
-          </div>
+        <div class="column">
+            <h4 id="scrollspyHeading1">Sarah M.</h4>
+            <p>"I had a treasured family Bible with torn pages, and they worked magic on it! The repairs are seamless,
+                and now our family heirloom looks as good as new. Highly recommended!"</p>
+            <h4 id="scrollspyHeading2">Michael C.</h4>
+            <p>"I was devastated when my favorite novel's spine started falling apart. But thanks to their expertise, my
+                book is now back in one piece. It's like a resurrection for my beloved story!"</p>
+            <h4 id="scrollspyHeading3">Emily R.</h4>
+            <p>"The team at this book repair service is simply outstanding! They not only fixed the torn pages in my
+                vintage cookbook but also made it look stunning again. Their attention to detail is unmatched."</p>
+            <h4 id="scrollspyHeading4">David H.</h4>
+            <p>"I had a damaged first edition that I thought was beyond repair. But these book wizards proved me wrong!
+                They worked wonders on it, and now I can proudly display it in my collection."</p>
+            <h4 id="scrollspyHeading5">Olivia T.</h4>
+            <p>"I couldn't be happier with the restoration they did on my antique leather-bound books. The craftsmanship
+                is impeccable, and they even managed to preserve the book's original scent. Truly remarkable!"</p>
+        </div>
+    </div>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-    </body>
+</body>
 
 </html>
