@@ -1,4 +1,4 @@
-# SEG3125-Project-1
+# BiblioTech Restore
 
 SEG3125 User Interface Design and Analysis 
 PROJECT 1 - Service Business Site
