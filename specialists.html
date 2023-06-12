@@ -2,219 +2,222 @@
 <!-- http://127.0.0.1:5500/index.html -->
 <html lang="en">
 
-    <head>
-        <style>
-            h3 {
-                text-align: center;
-            }
+<head>
+    <style>
+        h3 {
+            text-align: center;
+        }
 
-            p {
-                font-size: 110%;
-            }
+        p {
+            font-size: 110%;
+        }
 
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-            .card-group {
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 1%;
-                /* width: 90%; */
-                text-align: center;
-            }
+        .card-group {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            /* width: 90%; */
+            text-align: center;
+        }
 
-            .card {
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 1%;
-                color: #000000;
-                text-decoration: none;
-                /* width: 90%; */
-            }
+        .card {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1%;
+            color: #000000;
+            text-decoration: none;
+            /* width: 90%; */
+        }
 
-            .card .book {
-                position: relative;
-                bottom: 30px;
-                left: 0px;
-                visibility: hidden;
-                margin-top: -500px;
-            }
+        .card .book {
+            position: relative;
+            bottom: 30px;
+            left: 0px;
+            visibility: hidden;
+            margin-top: -500px;
+        }
 
-            .card:hover {
-                transform: translateY(-5px) scale(1.005) translateZ(0);
-                box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-                    0 24px 46px var(--box-shadow-color);
-                color: #02323a;
-                text-decoration: none;
-                background-color: #02323a;
-                color: #fff;
-                opacity: .9;
-            }
+        .card:hover {
+            transform: translateY(-5px) scale(1.005) translateZ(0);
+            box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+                0 24px 46px var(--box-shadow-color);
+            color: #02323a;
+            text-decoration: none;
+            background-color: #02323a;
+            color: #fff;
+            opacity: .9;
+        }
 
-            .card:hover .book {
-                text-align: center;
-                visibility: visible;
-                margin-top: -100px;
-                border-style: solid;
-                width: 70%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                background-color: #02323a;
-            }
+        .card:hover .book {
+            text-align: center;
+            visibility: visible;
+            margin-top: -100px;
+            border-style: solid;
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #02323a;
+        }
 
-            .text {
-                font-size: 120%;
-            }
+        .text {
+            font-size: 120%;
+        }
 
-            li:first-child {
-                margin-inline-end: auto;
-            }
+        li:first-child {
+            margin-inline-end: auto;
+        }
 
-            .nav a {
-                font-size: 130%;
-                color: #02323a;
-            }
+        .nav a {
+            font-size: 100%;
+            color: #02323a;
+        }
 
-            .nav p {
-                font-size: 160%;
-                display:inline-block;
-            }
+        .nav p {
+            font-size: 160%;
+            display: inline-block;
+        }
 
-            .nav button {
-                color: #A66249;
-                background-color: white;
-                border-radius: 12px;
-                margin-bottom: 0.5%;
-                border: 2px solid #A66249;
-                background-color: #D9B29C;
-                margin-bottom: 4%;
-            }
+        .nav button {
+            color: #A66249;
+            background-color: white;
+            border-radius: 12px;
+            margin-bottom: 0.5%;
+            border: 2px solid #A66249;
+            background-color: #D9B29C;
+            margin-bottom: 4%;
+        }
 
-            .nav a:hover {
-                color: white;
-            }
+        .nav a:hover {
+            color: white;
+        }
 
-            .nav li a:hover {
-                color: #A66249;
-            }
+        .nav li a:hover {
+            color: #A66249;
+        }
 
-            .nav button:hover {
-                border-radius: 12px;
-                margin-bottom: 0.5%;
-                background-color: #D9B29C;
-                border: 2px solid #A66249;
-                margin-bottom: 4%;
-            }
-        </style>
+        .nav button:hover {
+            border-radius: 12px;
+            margin-bottom: 0.5%;
+            background-color: #D9B29C;
+            border: 2px solid #A66249;
+            margin-bottom: 4%;
+        }
+    </style>
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <title>BiblioTech Restore</title>
-    </head>
+    <title>BiblioTech Restore</title>
+</head>
 
-    <body style="padding:1%">
-        <nav>
-            <div class="nav nav-tabs nav justify-content-end" id="nav-tab" role="tablist">
-                <li style="margin-left:5%; width: 40%;"><img src=".\images\bibliologo.png"alt="logo" style="width:7%"><p> BiblioTech Restore</p></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="specialists.html"  style="color: #02323a;"><b>Specialists</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq-review.html">FAQ & Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <ul class="nav nav-pills">
-                    <button class="nav-item">
-                        <a class="nav-link" href="book.html">Book Now</a>
-                    </button>
-                </ul>
-            </div>
-        </nav>
-
-        <h3 class="mt-4"><u>Specialists</u></h3>
-
-        <div class="card-group">
-            <a href="book.html" class="card">
-                <h2 class="card-text">
-                    John Smith
-                </h2>
-                <img class="card-img-top" src=".\images\person1.png" alt="Card image cap">
-
-                <div class="hover">
-                    <h2 class="book">BOOK NOW</h2>
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title text">Experience: 5 years at the Heritage Bindery & Restoration Institute</h5>
-                    <p class="card-text">
-                        Introducing John Smith, our skilled book repair specialist. With expertise, meticulous
-                        craftsmanship, and a passion for preserving literary treasures, he revives cherished volumes with
-                        care and authenticity.<br><b>Specialising: Restore & Repair & Digitize</b> </p>
-                </div>
-            </a>
-            <a href="book.html" class="card">
-                <h2 class="card-text">
-                    Jane Doe
-                </h2>
-                <img class="card-img-top" src=".\images\person4.png" alt="Card image cap">
-
-                <div class="hover">
-                    <h2 class="book">BOOK NOW</h2>
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title text">Experience: 3 years at the Ontario Archives Book Conservation Lab</h5>
-                    <p class="card-text">Known for her exceptional craftsmanship, Jane Doe's dedication to preserving the
-                        integrity of each book is unparalleled. Whether it's a well-worn classic, a cherished family
-                        heirloom, or a valuable collectible, Jane's expertise ensures that every book receives the utmost
-                        care and attention.<br><b>Specialising: Restore & Repair</b> </p>
-                </div>
-            </a>
-            <a href="book.html" class="card">
-                <h2 class="card-text">
-                    Emma Rey
-                </h2>
-                <img class="card-img-top" src=".\images\person3.png" alt="Card image cap">
-
-                <div class="hover">
-                    <h2 class="book">BOOK NOW</h2>
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title text">Experience: 2 years at the Royal Book Restoration Atelier</h5>
-                    <p class="card-text">With meticulous attention to detail and a deep reverence for the written word, Emma
-                        expertly restores books, preserving their stories for future generations. Her passion for the craft
-                        and dedication to quality craftsmanship make Emma the perfect choice to entrust your cherished
-                        volumes to. <br><b>Specialising: Repair & Digitize</b> </p>
-                </div>
-            </a>
+<body style="padding:1%">
+    <nav>
+        <div class="nav nav-tabs nav justify-content-end" id="nav-tab" role="tablist">
+            <li style="margin-left:5%; width: 40%;"><img src=".\images\bibliologo.png" alt="logo" style="width:7%">
+                <p> BiblioTech Restore</p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="specialists.html"
+                    style="color: #02323a;"><b>Specialists</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq-review.html">FAQ & Reviews</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <ul class="nav nav-pills">
+                <button class="nav-item">
+                    <a class="nav-link" href="book.html">Book Now</a>
+                </button>
+            </ul>
         </div>
+    </nav>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <h3 class="mt-4"><u>Specialists</u></h3>
 
-    </body>
+    <div class="card-group">
+        <a href="book.html" class="card">
+            <h2 class="card-text">
+                John Smith
+            </h2>
+            <img class="card-img-top" src=".\images\person1.png" alt="Card image cap">
+
+            <div class="hover">
+                <h2 class="book">BOOK NOW</h2>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title text">Experience: 5 years at the Heritage Bindery & Restoration Institute</h5>
+                <p class="card-text">
+                    Introducing John Smith, our skilled book repair specialist. With expertise, meticulous
+                    craftsmanship, and a passion for preserving literary treasures, he revives cherished volumes with
+                    care and authenticity.<br><b>Specialising: Restore & Repair & Digitize</b> </p>
+            </div>
+        </a>
+        <a href="book.html" class="card">
+            <h2 class="card-text">
+                Jane Doe
+            </h2>
+            <img class="card-img-top" src=".\images\person4.png" alt="Card image cap">
+
+            <div class="hover">
+                <h2 class="book">BOOK NOW</h2>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title text">Experience: 3 years at the Ontario Archives Book Conservation Lab</h5>
+                <p class="card-text">Known for her exceptional craftsmanship, Jane Doe's dedication to preserving the
+                    integrity of each book is unparalleled. Whether it's a well-worn classic, a cherished family
+                    heirloom, or a valuable collectible, Jane's expertise ensures that every book receives the utmost
+                    care and attention.<br><b>Specialising: Restore & Repair</b> </p>
+            </div>
+        </a>
+        <a href="book.html" class="card">
+            <h2 class="card-text">
+                Emma Rey
+            </h2>
+            <img class="card-img-top" src=".\images\person3.png" alt="Card image cap">
+
+            <div class="hover">
+                <h2 class="book">BOOK NOW</h2>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title text">Experience: 2 years at the Royal Book Restoration Atelier</h5>
+                <p class="card-text">With meticulous attention to detail and a deep reverence for the written word, Emma
+                    expertly restores books, preserving their stories for future generations. Her passion for the craft
+                    and dedication to quality craftsmanship make Emma the perfect choice to entrust your cherished
+                    volumes to. <br><b>Specialising: Repair & Digitize</b> </p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
 
 </html>
