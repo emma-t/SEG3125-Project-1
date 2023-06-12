@@ -4,19 +4,18 @@
 
     <head>
         <style>
-            h1 {
+            h3 {
                 text-align: center;
             }
 
             p {
-                font-size: 120%;
+                font-size: 110%;
             }
 
             .center {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 90%;
             }
 
             .card-group {
@@ -43,16 +42,16 @@
                 bottom: 30px;
                 left: 0px;
                 visibility: hidden;
-                margin-top: -400px;
+                margin-top: -500px;
             }
 
             .card:hover {
                 transform: translateY(-5px) scale(1.005) translateZ(0);
                 box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
                     0 24px 46px var(--box-shadow-color);
-                color: #000000;
+                color: #02323a;
                 text-decoration: none;
-                background-color: #000;
+                background-color: #02323a;
                 color: #fff;
                 opacity: .9;
             }
@@ -60,11 +59,57 @@
             .card:hover .book {
                 text-align: center;
                 visibility: visible;
-                margin-top: -400px;
+                margin-top: -100px;
+                border-style: solid;
+                width: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #02323a;
             }
 
             .text {
-                font-size: 140%;
+                font-size: 120%;
+            }
+
+            li:first-child {
+                margin-inline-end: auto;
+            }
+
+            .nav a {
+                font-size: 130%;
+                color: #02323a;
+            }
+
+            .nav p {
+                font-size: 160%;
+                display:inline-block;
+            }
+
+            .nav button {
+                color: #A66249;
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 0.5%;
+                border: 2px solid #A66249;
+                background-color: #D9B29C;
+                margin-bottom: 4%;
+            }
+
+            .nav a:hover {
+                color: white;
+            }
+
+            .nav li a:hover {
+                color: #A66249;
+            }
+
+            .nav button:hover {
+                border-radius: 12px;
+                margin-bottom: 0.5%;
+                background-color: #D9B29C;
+                border: 2px solid #A66249;
+                margin-bottom: 4%;
             }
         </style>
 
@@ -79,9 +124,10 @@
         <title>BiblioTech Restore</title>
     </head>
 
-    <body>
+    <body style="padding:1%">
         <nav>
             <div class="nav nav-tabs nav justify-content-end" id="nav-tab" role="tablist">
+                <li style="margin-left:5%; width: 40%;"><img src=".\images\bibliologo.png"alt="logo" style="width:7%"><p> BiblioTech Restore</p></li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -89,25 +135,29 @@
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="specialists.html">Specialists</a>
+                    <a class="nav-link active" aria-current="page" href="specialists.html"  style="color: #02323a;"><b>Specialists</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="faq-review.html">FAQ & Review</a>
+                    <a class="nav-link" href="faq-review.html">FAQ & Reviews</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
-                <button class="nav-item">
-                    <a class="nav-link" href="book.html">Book Now</a>
-                </button>
+                <ul class="nav nav-pills">
+                    <button class="nav-item">
+                        <a class="nav-link" href="book.html">Book Now</a>
+                    </button>
+                </ul>
             </div>
         </nav>
 
+        <h3 class="mt-4"><u>Specialists</u></h3>
+
         <div class="card-group">
             <a href="book.html" class="card">
-                <h1 class="card-text">
+                <h2 class="card-text">
                     John Smith
-                </h1>
+                </h2>
                 <img class="card-img-top" src=".\images\person1.png" alt="Card image cap">
 
                 <div class="hover">
@@ -123,9 +173,9 @@
                 </div>
             </a>
             <a href="book.html" class="card">
-                <h1 class="card-text">
+                <h2 class="card-text">
                     Jane Doe
-                </h1>
+                </h2>
                 <img class="card-img-top" src=".\images\person4.png" alt="Card image cap">
 
                 <div class="hover">
@@ -141,9 +191,9 @@
                 </div>
             </a>
             <a href="book.html" class="card">
-                <h1 class="card-text">
+                <h2 class="card-text">
                     Emma Rey
-                </h1>
+                </h2>
                 <img class="card-img-top" src=".\images\person3.png" alt="Card image cap">
 
                 <div class="hover">

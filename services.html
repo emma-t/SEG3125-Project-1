@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <style>
-            h1 {
+            h2 {
                 text-align: center;
             }
             h3 {
@@ -23,11 +23,50 @@
             
             .column {
                 flex: 33.33%;
-                padding: 2%;
             }
 
             .text {
-                font-size: 140%;
+                font-size: 120%;
+            }
+
+            li:first-child {
+                margin-inline-end: auto;
+            }
+
+            .nav a {
+                font-size: 130%;
+                color: #02323a;
+            }
+
+            .nav p {
+                font-size: 160%;
+                display:inline-block;
+            }
+
+            .nav button {
+                color: #A66249;
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 0.5%;
+                border: 2px solid #A66249;
+                background-color: #D9B29C;
+                margin-bottom: 4%;
+            }
+
+            .nav a:hover {
+                color: white;
+            }
+
+            .nav li a:hover {
+                color: #A66249;
+            }
+
+            .nav button:hover {
+                border-radius: 12px;
+                margin-bottom: 0.5%;
+                background-color: #D9B29C;
+                border: 2px solid #A66249;
+                margin-bottom: 4%;
             }
         </style>
 
@@ -42,36 +81,41 @@
         <title>BiblioTech Restore</title>
     </head>
 
-    <body>
+    <body style="padding:1%">
         <nav>
             <div class="nav nav-tabs nav justify-content-end" id="nav-tab" role="tablist">
+                <li style="margin-left:5%; width: 40%;"><img src=".\images\bibliologo.png"alt="logo" style="width:7%"><p> BiblioTech Restore</p></li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                    <a class="nav-link active" aria-current="page" href="services.html" style="color: #02323a;"><b>Services</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="specialists.html">Specialists</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="faq-review.html">FAQ & Review</a>
+                    <a class="nav-link" href="faq-review.html">FAQ & Reviews</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
-                <button class="nav-item">
-                    <a class="nav-link" href="book.html">Book Now</a>
-                </button>
+                <ul class="nav nav-pills">
+                    <button class="nav-item">
+                        <a class="nav-link" href="book.html">Book Now</a>
+                    </button>
+                </ul>
             </div>
         </nav>
 
+        <h3 class="mt-4"><u>Services</u></h3>
+
         <div class="row">
-            <div class="column">
+            <div class="column" style="background-color: #D9B29C; border-radius: 12px;">
                 <card>
-                    <h1>
+                    <h2>
                         Restore
-                    </h1>
+                    </h2>
                     <div class="row">
                         <div class="column">
                             <img src=".\images\old-book.png"
@@ -104,9 +148,9 @@
         
             <div class="column">        
                 <card>
-                    <h1>
+                    <h2>
                         Repair
-                    </h1>
+                    </h2>
                     <div class="row">
                         <div class="column">
                             <img src=".\images\torn-book.png"
@@ -138,11 +182,11 @@
                 </card>
             </div>
 
-            <div class="column">
+            <div class="column" style="background-color: #D9B29C; border-radius: 12px;">
                 <card>
-                    <h1>
+                    <h2>
                         Digitize
-                    </h1>
+                    </h2>
                     <div class="row">
                         <div class="column">
                             <img src=".\images\open-book.png"

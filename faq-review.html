@@ -4,7 +4,7 @@
 
 <head>
     <style>
-        h2 {
+        h3 {
             text-align: center;
         }
 
@@ -23,6 +23,46 @@
             flex: 50%;
             padding: 5px;
         }
+
+        li:first-child {
+                margin-inline-end: auto;
+            }
+
+            .nav a {
+                font-size: 130%;
+                color: #02323a;
+            }
+
+            .nav p {
+                font-size: 160%;
+                display:inline-block;
+            }
+
+            .nav button {
+                color: #A66249;
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 0.5%;
+                border: 2px solid #A66249;
+                background-color: #D9B29C;
+                margin-bottom: 4%;
+            }
+
+            .nav a:hover {
+                color: white;
+            }
+
+            .nav li a:hover {
+                color: #A66249;
+            }
+
+            .nav button:hover {
+                border-radius: 12px;
+                margin-bottom: 0.5%;
+                background-color: #D9B29C;
+                border: 2px solid #A66249;
+                margin-bottom: 4%;
+            }
     </style>
 
     <!-- Required meta tags -->
@@ -31,14 +71,16 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <title>BiblioTech Restore</title>
 </head>
 
-<body>
+<body style="padding:1%">
     <nav>
         <div class="nav nav-tabs nav justify-content-end" id="nav-tab" role="tablist">
+            <li style="margin-left:5%; width: 40%;"><img src=".\images\bibliologo.png"alt="logo" style="width:7%"><p> BiblioTech Restore</p></li>
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -49,19 +91,22 @@
                 <a class="nav-link" href="specialists.html">Specialists</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="faq-review.html">FAQ & Review</a>
+                <a class="nav-link active" aria-current="page" href="faq-review.html" style="color: #02323a;"><b>FAQ & Reviews</b></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
-            <button class="nav-item">
-                <a class="nav-link" href="book.html">Book Now</a>
-            </button>
+            <ul class="nav nav-pills">
+                <button class="nav-item">
+                    <a class="nav-link" href="book.html">Book Now</a>
+                </button>
+            </ul>
         </div>
     </nav>
 
     <div class="row">
         <div class="column">
+            <h3 class="mt-4" style="color: #02323a;"><u>FAQ</u> <i class="bi bi-patch-question-fill"></i></h3>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -72,7 +117,7 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">A: We handle a wide range of books, including hardcovers,
+                        <div class="accordion-body" style="background-color: #f2f2f2;">A: We handle a wide range of books, including hardcovers,
                             paperbacks, leather-bound, and antique books.</div>
                     </div>
                 </div>
@@ -85,7 +130,7 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">A: Absolutely! We specialize in repairing torn pages, loose
+                        <div class="accordion-body" style="background-color: #f2f2f2;">A: Absolutely! We specialize in repairing torn pages, loose
                             bindings, and other book damage.</div>
                     </div>
                 </div>
@@ -99,7 +144,7 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">A: Yes, we have extensive experience in handling and restoring rare
+                        <div class="accordion-body" style="background-color: #f2f2f2;">A: Yes, we have extensive experience in handling and restoring rare
                             and valuable books with utmost care and precision.</div>
                     </div>
                 </div>
@@ -113,7 +158,7 @@
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">A: The timeline depends on the condition of the book and the extent
+                        <div class="accordion-body" style="background-color: #f2f2f2;">A: The timeline depends on the condition of the book and the extent
                             of the restoration or repair required. We can provide an estimate after evaluating your
                             book.</div>
                     </div>
@@ -128,7 +173,7 @@
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">A: Yes, we provide digitization services to create high-quality
+                        <div class="accordion-body" style="background-color: #f2f2f2;">A: Yes, we provide digitization services to create high-quality
                             digital copies of entire book collections.</div>
                     </div>
                 </div>
@@ -136,6 +181,7 @@
         </div>
 
         <div class="column">
+            <h3 class="mt-4" style="color: #02323a;"><u>Reviews</u> <i class="bi bi-megaphone-fill"></i></h3>
             <h4 id="scrollspyHeading1">Sarah M.</h4>
             <p>"I had a treasured family Bible with torn pages, and they worked magic on it! The repairs are seamless,
                 and now our family heirloom looks as good as new. Highly recommended!"</p>
